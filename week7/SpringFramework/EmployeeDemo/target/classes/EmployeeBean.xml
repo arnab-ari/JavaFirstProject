@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id = "ebean1" class = "com.sapient.employee.Employee">
+    	<property name = "id" value = "101"></property>
+    	<property name = "name" value = "Arnab Ari"></property>
+    	<property name = "city" value = "Haldia"></property>
+    </bean>
+    
+     <bean id = "ebean2" class = "com.sapient.employee.Employee">
+    	<property name = "id" value = "102"></property>
+    	<property name = "name" value = "Arpan Ari"></property>
+    	<property name = "city" value = "Tajnagar"></property>
+    </bean>
+    
+    <bean id = "ebean3" class = "com.sapient.employee.Employee">
+    	<property name = "id" value = "-103"></property>
+    	<property name = "name" value = "Aranya Das"></property>
+    	<property name = "city" value = "Finga"></property>
+    </bean>
+    
+    
+</beans>
