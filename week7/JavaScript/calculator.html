@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width,initial-scale=1.0" />
+    <title>Calculator</title>
+</head>
+<body>
+    <center>
+        <form>
+            Enter number 1:
+            <input type="text" id="num1" name="num1" placeholder="number1" /><br />
+            Enter number 2:
+            <input type="text" id="num2" name="num2" placeholder="number2" /><br />
+            Result:
+            <input type="text" id="res" name="res" disabled /><br />
+
+            <input type="radio" name="op" value="1" />ADD<br />
+            <input type="radio" name="op" value="2" />SUB<br />
+            <input type="radio" name="op" value="3" />MUL<br />
+            <input type="radio" name="op" value="4" />DIV<br />
+            <button type="button" onclick="getres()">GET RESULT</button>
+
+        </form>
+    </center>
+</body>
+</html>
+
+<script language="javascript">
+    function getres(){
+
+    var a = parseInt(document.getElementById("num1").value);
+    var b = parseInt(document.getElementById("num2").value);
+    var c = document.getElementById("res");
+
+    var op = document.getElementsByName("op");
+    for( let i = 0; i < op.length; i++)
+    if(op[i].checked)
+    y = parseInt(op[i].value);
+    switch(y){
+    case 1:
+    c.value = a + b;
+    break;
+    case 2:
+    c.value = a - b;
+    break;
+    case 3:
+    c.value = a * b;
+    break;
+    case 4:
+    c.value = a / b;
+    break;
+
+    }
+
+    }
+
+</script>
